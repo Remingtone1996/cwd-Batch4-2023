@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="style.css">   
+    
+    <!--Title of the Webpage-->
+
+    <title>Batch 4, Grid System</title>
+</head>
+<body class="container grey lighten-3">
+    <h1 class="center">Grid</h1>
+    <div class="divider"></div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m8 offset-m1">
+                    <p>
+                        We are using a standard 12 column fluid responsive grid system. The grid helps you layout your page in an ordered, easy fashion.
+                    </p>
+                    <h3 class="header">Container</h3>
+                    <p>The container class is not strictly part of the grid but is important in laying out content. 
+                        It allows you to center your page content. The container class is set to ~70% of the window width. It helps you center and contain your page content. 
+                        We use the container to contain our body content.
+                    </p>
+                    <h5>Demo</h5>
+                    <p>Try button below to see what the page looks like without containers</p>
+                    <a id="container-toggle-button" class="btn waves-effect waves-light">Turn Off Container</a>
+                    <p>To add a container, just put your content inside a < div> tag with a conatainer class. Heres an example of how your page might be set.</p>
+
+                    <!-- Introduction-->
+                    <h3 class="header">Introduction</h3>
+                    <p>
+                        Take a look at this section to quickly understand how the grid works!
+                    </p>
+                    <h5>12 Columns</h5>
+                    <p>Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width.</p>
+                    <div class="row">
+                        <div class="col s1">1</div>
+                        <div class="col s1">2</div>
+                        <div class="col s1">3</div>
+                        <div class="col s1">4</div>
+                        <div class="col s1">5</div>
+                        <div class="col s1">6</div>
+                        <div class="col s1">7</div>
+                        <div class="col s1">8</div>
+                        <div class="col s1">9</div>
+                        <div class="col s1">10</div>
+                        <div class="col s1">11</div>
+                        <div class="col s1">12</div>
+                    </div>
+                    <p>
+                        <strong>Note:</strong> For now, just know that the s1 stands for small-1 which in plain English means "1 column on small screens".
+                    </p>
+                    <h5><strong>Columns live inside Rows</strong></h5>
+                    <p>Remember when you are creating your layout that all columns must be contained inside a row and that you must add the col class to your inner divs to make them into columns.</p>
+                    <div class="row">
+                        <div>
+                            <div class="col s12 center red white-text">This div is 12-columns wide on all screen sizes</div>
+                        </div>
+                        <div>
+                            <div class="col s6 center red white-text">6-columns (one-half)</div>
+                        </div>
+                        <div>
+                            <div class="col s6 center red white-text">6-columns (one-half)</div>
+                        </div>
+                    </div>
+
+                    <!--Offsets-->
+                    <h3 class="header">Offsets</h3>
+                    <p>
+                        To offset, simply add offset-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) 
+                        and the number after is the number of columns you want to offset by.
+                    </p>
+                    <nav class="red">
+                        <div class="row">
+                            <div class="col s12"><span class="flow-text">This div is 12-columns wide on all screen sizes</span></div>
+                        </div>
+                    </nav>
+                    <nav class="red">
+                        <div class="col s6 offset-s6"><span class="flow-text">6-columns (offset-by-6)</span></div>
+                    </nav>
+                    <br>
+                    <!--Push and Pull-->
+                    <h3 class="header">Push and Pull</h3>
+                    <p>
+                        You can easily change the order of your columns with push and pull. Simply add push-s2 or pull-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) 
+                        and the number after is the number of columns you want to push or pull by.
+                    </p>
+                    <div class="row">
+                        <div class="card-panel red white-text col s7 push-s5"><span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</span></div>
+                        <div class="card-panel red white-text col s5 pull-s7"><span class="flow-text">5-columns wide pulled to the left by 7-columns.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+</body>
+</html>
